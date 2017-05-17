@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>tsp</name>
+    </assembly>
+    <members>
+        <member name="T:Tsp.City">
+            An individual City in our tour.
+        </member>
+        <member name="M:Tsp.City.#ctor(System.Int32,System.Int32)">
+            Constructor that provides the city location.
+            "x" - X position of the city.
+            "y" - Y position of the city.
+        </member>
+        <member name="F:Tsp.City.location">
+            Private copy of the location of this city.
+        </member>
+        <member name="P:Tsp.City.Location">
+            The location of this city.
+        </member>
+        <member name="F:Tsp.City.distances">
+            Private copy of the distance from this city to every other city.
+            The index in this array is the number of the city linked to.
+        </member>
+        <member name="P:Tsp.City.Distances">
+            The distance from this city to every other city.
+        </member>
+        <member name="F:Tsp.City.closeCities">
+            Private copy of the list of the cities that are closest to this one.
+        </member>
+        <member name="P:Tsp.City.CloseCities">
+            A list of the cities that are closest to this one.
+        </member>
+        <member name="M:Tsp.City.FindClosestCities(System.Int32)">
+            Find the cities that are closest to this one.
+            "numberOfCloseCities" - When creating the initial population of tours, this is a greater chance
+            that a nearby city will be chosen for a link. This is the number of nearby cities that will be considered close.
+        </member>
+        <member name="T:Tsp.Link">
+            An individual link between 2 cities in a tour.
+            This city connects to 2 other cities.
+        </member>
+        <member name="F:Tsp.Link.connection1">
+            Connection to the first city.
+        </member>
+        <member name="P:Tsp.Link.Connection1">
+            Connection to the first city.
+        </member>
+        <member name="F:Tsp.Link.connection2">
+            Connection to the second city.
+        </member>
+        <member name="P:Tsp.Link.Connection2">
+            Connection to the second city.
+        </member>
+        <member name="T:Tsp.Program">
+            Contains the Main that starts this form.
+        </member>
+        <member name="M:Tsp.Program.Main">
+            The main entry point for the application.
+        </member>
+        <member name="M:Tsp.Tsp.makeChildren(System.Int32,System.Int32)">
+            <param name="groupSize">Number of tours in this group.</param>
+            <param name="mutation">Odds that a child will be mutated.</param>
+        </member>
+        <member name="F:Tsp.TspForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Tsp.TspForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Tsp.TspForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Tsp.Properties.Resources">
+            <summary>
+              Класс ресурса со строгой типизацией для поиска локализованных строк и т.д.
+            </summary>
+        </member>
+        <member name="P:Tsp.Properties.Resources.ResourceManager">
+            <summary>
+              Возвращает кэшированный экземпляр ResourceManager, использованный этим классом.
+            </summary>
+        </member>
+        <member name="P:Tsp.Properties.Resources.Culture">
+            <summary>
+              Перезаписывает свойство CurrentUICulture текущего потока для всех
+              обращений к ресурсу с помощью этого класса ресурса со строгой типизацией.
+            </summary>
+        </member>
+    </members>
+</doc>
