@@ -46,11 +46,11 @@
             // Run
             // 
             this.Run.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Run.Location = new System.Drawing.Point(265, 226);
+            this.Run.Location = new System.Drawing.Point(24, 226);
             this.Run.Name = "Run";
             this.Run.Size = new System.Drawing.Size(89, 24);
             this.Run.TabIndex = 0;
-            this.Run.Text = "Обчислити";
+            this.Run.Text = "Calculate";
             this.Run.UseVisualStyleBackColor = true;
             this.Run.Click += new System.EventHandler(this.Run_Click);
             // 
